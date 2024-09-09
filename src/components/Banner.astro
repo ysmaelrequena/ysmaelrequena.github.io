@@ -1,0 +1,386 @@
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-715">
+    <div class="cs-container">
+        <span class="cs-int-title">What is FDAPI?</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/fgs.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/fgs.jpg">
+        <img  class="banner" loading="lazy" decoding="async" src="/fgs.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>         
+
+<section id="content-page-715">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">The "FDAPI" is, like its name indicates, <span class="cs-color">an API that contains frame data from different games</span> so that developers can fetch all the information and build tools for players interested in competitive knowledge about their game.</h1>
+            <h2>What is an API?</h2>
+            <p>
+                An API is a contract between two pieces of software that allows them to comunicate with each other.
+                <span class="cs-line-break">
+                Imagine that you're in a restaurant ordering food, and after taking your order, the server brings said food to you, 
+                without you having to know the specifics of how each plate was prepared. 
+                <span class="cs-line-break"></span>
+                Similarly, any software can order information from an API, and if the conditions required are met, the API will 
+                serve the information needed, without needing to explain the details on how the information was collected or sent.
+                </span>
+            </p>
+            <h2>Why collect frame data into an API if there are many wikis with that information already?</h2>
+            <p>
+                Because that while certainly, there are many apps and websites containing the frame data for many differet games,
+                it is also true that the information is usually scattered in many different sites that are focused on each game. The idea behind
+                FDAPI is collecting everything into a compendium of frame data that can ease the extraction of said data for developers looking into
+                developing their own frame data application.
+            </p>
+            <h2>Is FDAPI free to use?</h2>
+            <p>
+                Yes, FDAPI is completely free to use.
+                <span class="cs-line-break">
+                In the future, we will require for you to register without any cost in order to keep using the API, but the current beta
+                doesn't require any type of registration in order to be used.
+            </span>
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="./plusr.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="./plusr.jpg">
+                <img class="char-select" loading="lazy" decoding="async" src="./plusr.jpg" alt="person" width="570" height="680">
+            </picture>
+        </div>
+</section>
+
+<style>
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-715 {
+        /* 175px - 200px top */
+        padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
+        position: relative;
+        z-index: 1;
+    }
+    #banner-715 .cs-container {
+        text-align: center;
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #banner-715 .cs-int-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #banner-715 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #banner-715 .cs-background:before {
+        /* background color overlay */
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.75;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #banner-715 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-715 .cs-background:before {
+        opacity: 1;
+        background: linear-gradient(
+            90.01deg,
+            rgba(0, 0, 0, 0.9) 16.86%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+}
+
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #content-page-715 {
+        padding: var(--sectionPadding);
+        background-color: #1B1B1B;
+        /* clips the wave background from causing overflow issues when it goes off screen */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    #content-page-715 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+    }
+    #content-page-715 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 46.125rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+    #content-page-715 .cs-content img {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        display: block;
+    }
+    #content-page-715 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 1rem 0;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #content-page-715 h2,
+    #content-page-715 h3,
+    #content-page-715 h4,
+    #content-page-715 h5,
+    #content-page-715 h6 {
+        font-weight: 700;
+        text-align: inherit;
+        margin: 0 0 1rem 0;
+        color: var(--primary);
+    }
+    #content-page-715 h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #content-page-715 h3 {
+        font-size: 1.5rem;
+        color: var(--primary);
+    }
+    #content-page-715 h4,
+    #content-page-715 h5,
+    #content-page-715 h6 {
+        font-size: 1.25rem;
+    }
+    #content-page-715 .cs-button-solid {
+        margin-bottom: 2rem;
+    }
+    #content-page-715 .cs-color {
+        color: var(--primary);
+    }
+    #content-page-715 p {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        color: var(--bodyTextColorWhite);
+    }
+    #content-page-715 p:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #content-page-715 p a {
+        font-size: inherit;
+        line-height: inherit;
+        text-decoration: underline;
+        color: var(--primary);
+    }
+    #content-page-715 ol,
+    #content-page-715 ul {
+        padding-left: 1.5rem;
+        margin: 0 0 2rem 0;
+        color: var(--bodyTextColorWhite);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #content-page-715 ul li {
+        list-style: none;
+        color: inherit;
+        position: relative;
+    }
+    #content-page-715 ul li:before {
+        /* custom list bullet */
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: currentColor;
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 0.625rem;
+        left: -0.75rem;
+    }
+    #content-page-715 .cs-image-group {
+        /* scales the whole section down and ties the font size to the vw and stops at 70% of the vale of 1em, changes at desktop */
+        font-size: min(1vw, 1em);
+        /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+        width: 33.875em;
+        height: 48.3125em;
+        display: none;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        position: relative;
+        /* flips it horizontally */
+        transform: scaleX(-1);
+    }
+    #content-page-715 .cs-picture {
+        width: 33.875em;
+        height: 40.4375em;
+        border-radius: 17.8125em;
+        border: 0.75em solid #ffffff;
+        background-color: #f7f7f7;
+        /* prevents border from affecting height and width */
+        box-sizing: border-box;
+        /* clips img tag corners */
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #content-page-715 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        /* makes it act like a background image */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* flips the image to its original orientation */
+        transform: scaleX(-1);
+    }
+    #content-page-715 .cs-flower {
+        width: 22.625em;
+        height: auto;
+        display: block;
+        position: absolute;
+        bottom: -2.375em;
+        right: -3em;
+        z-index: -1;
+        transform: rotate(142deg);
+    }
+    #content-page-715 .cs-sense {
+        width: 5em;
+        height: auto;
+        position: absolute;
+        top: -0.25em;
+        left: 0.625em;
+        transform: rotate(90deg);
+    }
+    #content-page-715 .cs-background {
+        display: none;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #content-page-715 .cs-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #content-page-715 .cs-image-group {
+        display: block;
+    }
+    #content-page-715 .cs-background {
+        width: 20%;
+        height: 100%;
+        background-color: #f7f7f7;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    #content-page-715 .cs-background img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #content-page-715 .cs-image-group {
+        /* position absolute so we can have it overflow the container as seen in the design. */
+        font-size: inherit;
+        position: absolute;
+        top: 0rem;
+        right: -6.25rem;
+    }
+    #content-page-715 .cs-background {
+        width: 50%;
+        /* with the left edge always positioned at the center line, we push left of the center line by 335px.  This ensures that this element will stay exactly in this position no matter hoe wide the screen gets */
+        margin-left: 20.9375rem;
+        right: auto;
+        /* sets the left edge of the element to be at the center line */
+        left: 50%;
+    }
+}
+
+.cs-line-break {
+    display: block; /* Makes span behave like a block element */
+    margin-top: 10px; /* Adds space above the span */
+}
+
+.char-select {
+    width: 200px;
+}
+
+.banner {
+    transform: translateY(100px)
+}
+
+
+
+                                   
+</style>
